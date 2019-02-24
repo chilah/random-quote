@@ -1,0 +1,73 @@
+body {
+  background-color: tomato;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quoteBox {
+  width: 80%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px black;
+  padding: 15px;
+}
+
+.fa-quote-left {
+  font-size: 30px;
+}
+
+.quote {
+  margin-left: 20px;
+  font-size: 2rem;
+  font-family: Kanit, sans-serif;
+}
+
+.author {
+  text-align: right;
+  font: italic 1.5rem Kanit, sans-serif;
+}
+
+.btn {
+  margin-top: 20px;
+}
+
+.get-quote,
+.tweet {
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 3px 3px 1px black;
+  outline: none;
+  margin-right: 30px;
+  font-size: 0.9rem;
+  font-family: Kanit, sans-serif;
+}
+
+.get-quote:hover,
+.tweet:hover {
+  position: relative;
+  top: 3px;
+}
+
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-family: Prompt, sans-serif;
+  color: white;
+}
+
+@media screen and (min-width: 800px) {
+  .quoteBox {
+    width: 70%;
+  }
+
+  .quote,
+  .author {
+    font-size: 30px;
+  }
+}
