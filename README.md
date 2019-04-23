@@ -1,5 +1,5 @@
 # Random Quote Machine 💭
-This project is made for random quote from [FavQs](https://favqs.com/) api
+This project is made for random quote from [FavQs](https://favqs.com/) api. 
 
 ## Tech Stack 💻
 - HTML
@@ -8,3 +8,7 @@ This project is made for random quote from [FavQs](https://favqs.com/) api
 
 ## Preview 🏍
 - [Codepen](https://codepen.io/chilazz/pen/vbXGeV)
+
+## Features 
+- Get a random quote
+- Tweet
