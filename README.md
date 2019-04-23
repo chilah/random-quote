@@ -1,5 +1,5 @@
 # Random Quote Machine 💭
-- This project is made for random quote from [FavQs](https://favqs.com/) api
+This project is made for random quote from [FavQs](https://favqs.com/) api
 
 ## Tech Stack 💻
 - HTML
