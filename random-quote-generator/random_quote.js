@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-  var quotes;
-  var authors;
+  let quotes;
+  let authors;
   
   function getQuote() {
     // convert a data to json 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         quotes = quote.body;
         authors = quote.author;
       
-        document.getElementById('quote').innerHTML = quotes;
+        document.getElementById('text').innerHTML = quotes;
         document.getElementById('author').innerHTML = authors;
       })
       .catch(error => console.log(error));
@@ -28,8 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('body').style.backgroundColor = random;
   }
 
-  const getNewQuote = document.getElementById('getQuote');
-  const tweetBtn = document.getElementById('tweet');
+  const getNewQuote = document.getElementById('new-quote');
+  const tweetBtn = document.getElementById('tweet-quote');
 
   // get a random quote and random color
   getNewQuote.addEventListener('click', function () {
@@ -38,8 +38,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // tweet
-  tweetBtn.addEventListener('click', function () {
-    window.open('https://twitter.com/intent/tweet?text=' + encodeURIComponent(quotes + ' –' + authors));
+  tweetBtn.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    window.open(tweetBtn.href + encodeURIComponent(quotes + ' –' + authors));
   });
 
   // run both func when page is loaded
