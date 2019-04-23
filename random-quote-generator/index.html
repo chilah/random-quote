@@ -6,26 +6,29 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Random Quote Project</title>
   <link rel="stylesheet" href="style.css">
-  <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <!-- font awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+  
 </head>
 <body>
-  <div class="quoteBox">
+  <div class="quoteBox" id="quote-box">
     <i class="fas fa-quote-left"></i>
-    <h1 class="quote" id="quote"></h1>
+    <h1 class="quote" id="text"></h1>
     <h1 class="author" id="author"></h1>
+    <div class="btn">
+      <button type="button" class="get-quote" id="new-quote">Get Quote</button>
+      <a href="https://twitter.com/intent/tweet?text=" class="tweet" id="tweet-quote"><i class="fab fa-twitter"></i> tweet</a>
+    </div>
   </div>
-  <div class="btn">
-    <button type="button" class="get-quote" id="getQuote">Get New Quote</button>
-    <button type="button" class="tweet" id="tweet"><i class="fab fa-twitter"></i>tweet</button>
-  </div>
-  <footer class="madeBy">☕</footer>
-
+  <footer class="madeBy">
+    <p>
+        Created with ☕ by <a target="_blank" href="https://github.com/chilah">Chilah</a>.
+    </p> 
+  </footer>
   <script type="text/javascript" src="random_quote.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
